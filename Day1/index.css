@@ -1,0 +1,46 @@
+body{
+    background-image: url(img1.jpg);
+    background-size:cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+h1{
+ 
+    color: orangered;
+    font-size:40px;
+ 
+}
+
+.drumkit-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 1;
+    flex-wrap: wrap;
+    height: 70vh;
+}
+
+.Kit{
+    width: 70px;
+    height:50px;
+    margin-top: 30px;
+    text-align: center;
+    background-color: orangered;
+    padding: 3px;
+    transition: all 0.7s;
+}
+
+.playing{
+    transform: scale(1.1);
+    border: 2px solid white;
+
+}
+
+kbd{
+    font-size: 20px;
+}
+
+span{
+    font-size: 15px;
+}
