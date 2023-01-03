@@ -1,3 +1,19 @@
+
 body{
-    background-color: chocolate;
+    background-color: black;
 }
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+
+  li{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 13px;
+    list-style-type: none;
+  }
