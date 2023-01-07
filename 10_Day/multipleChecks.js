@@ -2,25 +2,29 @@
 
 const checkboxes = document.querySelectorAll(".allItems input[type=checkbox]")
 
-checkboxes.forEach(checkbox => checkbox.addEventListener("click" , handleClick ) )
+checkboxes.forEach(checkbox => checkbox.addEventListener("click", handleClick))
 
 let lastchecked;
-let inbetween =false
 
-function handleClick(e){
-   
-    if(e.shiftKey && this.checked){
-       checkboxes.forEach(checkbox => {
-        if(checkbox === this || checkbox === lastchecked){
-            inbetween = !inbetween
-        }
-       })
+
+function handleClick(e) {
+
+    let inBetween = false
+
+    if (e.shiftKey && this.checked) {
+        checkboxes.forEach(checkbox => {
+
+            if (checkbox === this || checkbox === lastchecked) {
+                inBetween = !inBetween
+            }
+            if (inBetween) {
+                checkbox.checked = true
+            }
+
+        })
     }
 
-    if(inbetween) {
-        console.log(this)
-        this.checked
-    }
+
 
     lastchecked = this
 }
