@@ -35,3 +35,8 @@ body{
 .alignleft.slidein{
     transform: translateX(30%) scale(0.95);
 }
+
+.slidein.active{
+    opacity:1;
+    transform: translateX(0%) scale(1) ;
+}
