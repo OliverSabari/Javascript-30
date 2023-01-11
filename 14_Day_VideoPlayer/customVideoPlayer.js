@@ -49,3 +49,38 @@ function handleRangeUpdate() {
   //   console.log(this.value);
   video[this.name] = this.value;
 }
+
+
+//Progress bar which is created in width ,height and bgcolor
+
+const progressBar = document.querySelector(".progress-filled")
+
+
+video.addEventListener("timeupdate", handleProgress);
+
+function handleProgress() {
+  const percent = (video.currentTime / video.duration) * 100;
+  progressBar.style.flexBasis = `${percent}%`;
+}
+
+//When user clicks on progress bar or moves the video playtime on progress bar
+
+const progress = document.querySelector(".progress");
+
+let mousedown = false;
+progress.addEventListener("click", scrub);
+
+progress.addEventListener("mousemove", (e) => {
+   if (mousedown) {
+     scrub(e);
+   }
+ });
+ 
+progress.addEventListener("mousedown", () => (mousedown = true));
+progress.addEventListener("mouseup", () => (mousedown = false));
+
+function scrub(e) {
+  //   console.log(e);
+  const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
+  video.currentTime = scrubTime;
+}
