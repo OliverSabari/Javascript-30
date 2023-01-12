@@ -1,0 +1,21 @@
+
+.textdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+
+.content{
+    font-size: 160px;
+    color: chocolate;
+    text-align: center;
+    position: relative;
+    transform: rotate(-20deg);
+}
+
+.content span{
+    display: block;
+}
