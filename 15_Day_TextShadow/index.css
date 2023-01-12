@@ -9,13 +9,10 @@
 
 
 .content{
-    font-size: 160px;
+    font-size: 120px;
     color: chocolate;
     text-align: center;
     position: relative;
     transform: rotate(-20deg);
-}
-
-.content span{
-    display: block;
+    text-shadow: -5px -3px black;
 }
