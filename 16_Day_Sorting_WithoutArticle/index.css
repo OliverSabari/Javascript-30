@@ -1,0 +1,15 @@
+
+.sortDiv{
+   
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    min-height: 100vh;
+   
+}
+
+.bandList > li{
+    padding: 10px;
+    color: wheat;
+    font-size: 20px;
+}
