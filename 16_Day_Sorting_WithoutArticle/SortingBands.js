@@ -29,7 +29,7 @@ const bands = [
     return `<li> ${item} </li> ` 
   }).join('')
 
-// 2nd Method Tried by changing bands data which ends up with more complex
+// 2nd Method Tried by changing bands data which ends up with more complex (not working)
 
 //   const withoutArticle = bands.map(band => {
 
