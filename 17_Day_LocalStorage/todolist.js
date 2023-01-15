@@ -43,6 +43,7 @@ function populateList( listOfData = [] , todolist ){
 
 }
 
+//Event Delegation  || Performing event on UL rather than li as new li maybe added and we cannot have eventlistener for future Li's
 function toggleCheck(e){
    if(!e.target.matches("input")) return null
 
