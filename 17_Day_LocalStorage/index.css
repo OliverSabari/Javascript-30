@@ -1,3 +1,19 @@
 body{
     background-color: antiquewhite;
+    color: white;
+}
+
+.top-div{
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.todolist{
+    list-style-type: none;
+
 }
