@@ -1,0 +1,13 @@
+body{
+    background-color: yellow;
+
+    }
+
+.speech-div{
+    background-color: white;
+    color:black;
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    max-height: 100vh;
+}
