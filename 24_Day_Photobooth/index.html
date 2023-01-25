@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Booth</title>
+</head>
+<body>
+
+    <div>
+
+        <div>
+
+            <button onclick="takePhoto()" > Take Photo </button>
+
+            <div>
+
+                <label for="red">Red Min</label>
+                <input type="range" min="0" max="255" name="red" />
+
+                <label for="red2">Red Max</label>
+                <input type="range" min="0" max="255" name="red2" />
+
+                <br/>
+
+                
+                <label for="green">Green Min</label>
+                <input type="range" min="0" max="255" name="green" />
+
+                <label for="green2">Green Max</label>
+                <input type="range" min="0" max="255" name="green2" />
+
+                <br/>
+
+                
+                <label for="blue">Blue Min</label>
+                <input type="range" min="0" max="255" name="blue" />
+
+                <label for="blue2">Blue Max</label>
+                <input type="range" min="0" max="255" name="blue2" />
+
+            </div>
+
+           
+
+        </div>
+
+        <canvas class="photo"> </canvas>
+
+        <video class="player"> </video>
+
+        <div class="strip"> </div>
+
+
+    </div>
+
+    
+    <audio class="snap" src="http://wesbos.com/demos/photobooth/snap.mp3" hidden></audio>
+
+    <script src="./photobooth.js" ></script>
+
+</body>
+</html>
