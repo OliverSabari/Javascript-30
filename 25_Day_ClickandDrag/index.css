@@ -1,0 +1,22 @@
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items{
+   position:relative;
+    overflow-x: scroll;
+   white-space: nowrap;
+  
+}
+
+.item{
+    width:200px;
+    height:200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
